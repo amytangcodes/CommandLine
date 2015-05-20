@@ -23,7 +23,9 @@
 		<p>present working directory<span>pwd</span></p>
 
 	<h2>Create a Repository</h2>
-	
+		<p>
+			
+		</p>
 
 	<h2>Staging area/ Adding Updated Files</h2>
 		<p>The staging area is where you collect updated files/folders to eventually be saved as a “snapshot” or version of your project files up to the point. Only the files that have been changed need to be staged.</p>
@@ -45,8 +47,49 @@
 		<p><span>git status</span></p>
 
 	<h2>Git Push</h2>
-		<p>Note that all these steps are still happening locally on your computer. Your repository that is hosted online via github.com has not changed yet. We need to push the code to get it go up into the repository.</p>
+		<p>Note that all these steps are still happening locally on your computer. Your repository that is hosted online via github.com has not changed yet. Push the code to your github repository.</p>
 		<p><span>git push origin master</span></p>
+
+	<h2>Pushing Changed Repo Versions to Our Repo Version</h2>
+		<ul>
+			<!-- <li class="staging"><span></span></li> -->
+			<!-- <li class="staging"><span></span></li> -->
+			<!-- <li class="staging"><span></span></li> -->
+			<!-- <li class="staging"><span></span></li> -->
+			<li class="staging">Associating remote and our repo versions <span>git remote -v</span></li>
+			<li class="staging">Upstream means the original version<span>git remote add upstream https://{remote repo}</span></li>
+			<li class="staging">Check the repo version on GH you're working with <span>git remote -v</span></li>
+			<li class="staging">If ^ version pulls nothing, then pull your repo <span>git remote add origin https://{github-address}</span></li>
+			<li class="staging"> <span>git pull upstream master</span></li>
+			<li class="staging"> <span>git log</span></li>
+		</ul>
+	
+	<h2>Create a Site from GitHub/ Syncing Branches</h2>
+		<ul>
+			<li class="staging">Create and switch to the new gh-pages branch - git check out: switches branches | -b: also creates a new branch at the same time<span>git checkout -b gh-pages</span></li>
+			<li class="staging">Switches between branches<span>git branch</span></li>
+			<li class="staging">Switch to master to update<span>git checkout master</span></li>
+			<li class="staging">Updates changes in gh-pages into master<span>git rebase gh-pages</span></li>			
+			<li class="staging">Can update gh-pages while in master<span>git push origin gh-pages</span></li>
+			<li class="staging">Site location<span>http://username.github.io/repository.</span></li>
+		</ul>
+
+	<h2>Other Commands</h2>
+		<ul>
+			<li class="staging">Quit <span>q</span></li>
+			<li class="staging">Clear screen <span>clear</span></li>
+			<li class="staging">Paste <span>Press 'Insert' button</span></li>
+			<li class="staging">Go back one folder <span>cd ..</span></li>
+			<li class="staging">Makes a new folder (directory)<span>mkdir {file-name}</span></li>
+			<li class="staging"><span></span></li>
+			<li class="staging">Creates a new index.html file <span>touch index.html</span></li>
+			<li class="staging">Initializing our repo <span>git init</span></li>
+			<!-- <li class="staging"><span></span></li> -->
+			<li class="staging">Take url provided and download to computer <span>git clone</span> </li>
+			<li class="staging">Pull down any changes from a remote repo <span>git pull</span> </li>	
+			<li class="staging">Check out the branch you wish to merge to. Usually, you will merge into master. <span>git checkout master</span></li>
+			<!-- <li class="staging"> <span></span></li> -->
+		</ul>
 
 	<ul class="links">
 		<li>
