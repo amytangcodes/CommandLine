@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cli commands</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Inconsolata' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+	<h1>Git & GitHub</h1>
+
+	<p>Git is type of version control system. With Git we can:</p>
+	<ul>
+		<li>Work (code, make changes, add/remove files, etc.)</li>
+		<li>Add files to staging area when you’re done a chunk of work. (git add <file>)</li>
+		<li>Take a snapshot (git commit -m "a useful commit message here")</li>
+		<li>git push to update github.com repository.</li>
+		<li>Repeat steps 1-4.</li>
+	</ul>
+
+	<p>You will use <a href="http://github.com">GitHub</a> to host our version-controlled projects.  When using Git, whether through a GUI or command line, there is a specific workflow that is required. Let’s go over the process and some terminology.</p>
+
+	<h2>Working Directory</h2>
+		<p>The working directory is the folder that contains all your project files.</p> 
+		<p>present working directory<span>pwd</span></p>
+
+	<h2>Create a New Repository</h2>
+		<p><a href="https://help.github.com/articles/create-a-repo/">Create a Repo</a></p>
+
+
+	<h2>Staging area/ Adding Updated Files</h2>
+		<p>The staging area is where you collect updated files/folders to eventually be saved as a “snapshot” or version of your project files up to the point. Only the files that have been changed need to be staged.</p>
+	
+		<ul>
+			<li class="staging">Add/stage a specific file <span>git add file-name</span> </li> 
+			<li class="staging">Add/stage all new, modified and deleted files<span>git add -A</span></li> 
+			<li class="staging">Add/stage new and modified, without deleted<span>git add .</span> </li> 
+			<li class="staging">Add/stages modified and deleted, without new<span>git add -u</span> </li>
+		</ul>
+
+	<h2>Commit your changes</h2>
+		<p>Commit your changes and updates to take the snapshot of your project. Every commit should contain a short message to summarize the changes being committed. (-m stands for message)</p>
+		<p>For your first commit, it’s common for your message to be “initial commit”.</p>
+		<p><span>git commit -m "a useful commit message here"</span></p>
+	
+	<h2>Git Status</h2>
+		<p>To see which files are in the working directory and which are in the staging area or just to what’s going on in general, use git status. You can use this command at any step to check the status.</p>
+		<p><span>git status</span></p>
+
+	<h2>Git Push</h2>
+		<p>Note that all these steps are still happening locally on your computer. Your repository that is hosted online via github.com has not changed yet. Push the code to your github repository.</p>
+		<p><span>git push origin master</span></p>
+
+	<h2>Pushing Changed Repo Versions to Our Repo Version</h2>
+		<ul>
+			
+			<li class="staging">Associating remote and our repo versions <span>git remote -v</span></li>
+			<li class="staging">Upstream means the original version<span>git remote add upstream https://{remote repo}</span></li>
+			<li class="staging">Check the repo version on GH you're working with <span>git remote -v</span></li>
+			<li class="staging">If ^ version pulls nothing, then pull your repo <span>git remote add origin https://{github-address}</span></li>
+			<li class="staging"> <span>git pull upstream master</span></li>
+			<li class="staging"> <span>git log</span></li>
+		</ul>
+	
+	<h2>Create a Site from GitHub/ Syncing Branches</h2>
+		<ul>
+			<li class="staging">Create and switch to the new gh-pages branch - git check out: switches branches | -b: also creates a new branch at the same time<span>git checkout -b gh-pages</span></li>
+			<li class="staging">Switches between branches<span>git branch</span></li>
+			<li class="staging">Switch to master to update<span>git checkout master</span></li>
+			<li class="staging">Updates changes in gh-pages into master<span>git rebase gh-pages</span></li>			
+			<li class="staging">Can update gh-pages while in master<span>git push origin gh-pages</span></li>
+			<li class="staging">Site location<span>http://username.github.io/repository.</span></li>
+		</ul>
+
+	<h2>Commands</h2>
+		<ul>
+			<li class="staging">Quit <span>q</span></li>
+			<li class="staging">Clear screen <span>clear</span></li>
+			<li class="staging">Paste <span>Press 'Insert' button</span></li>
+			<li class="staging">Go back one folder <span>cd ..</span></li>
+			<li class="staging">Makes a new folder (directory)<span>mkdir {file-name}</span></li>
+			<li class="staging">Forgot a command? Type this into the command line to bring up the 21 most common git commands.<span>git help</span></li>
+			<li class="staging">If you’re working on your local computer, and want your commits to be visible online on GitHub as well, you “push” the changes up to GitHub with this command.<span>git push</span></li>
+			<li class="staging">If you’re working on your local computer and want the most up-to-date version of your repository to work with, you “pull” the changes down from GitHub with this command.<span>git pull</span></li>
+			
+			<li class="staging">Copying<span>cp</span></li>
+			<li class="staging">Remove <span>-r</span></li>
+			<li class="staging">Creates a new index.html file <span>touch index.html</span></li>
+			<li class="staging">Deleting files and folders<span>rm {file-name.html}</span></li>
+			<li class="staging">Initializes a new Git repository. Only after you input this does it accept further Git commands. <span>git init</span></li>			
+			<li class="staging">Take url provided and download to computer <span>git clone</span> </li>
+			<li class="staging">Pull down any changes from a remote repo <span>git pull</span> </li>	
+			<li class="staging">Check out the branch you wish to merge to. Usually, you will merge into master. <span>git checkout master</span></li>
+			
+			
+			<li class="staging">‘Super-User DO’. Enables administrator access to the file system.<span>sudo</span></li>
+			<li class="staging">Moving files into another folder<span>mv {fileName} {folderName}/</span></li>
+			<li class="staging"><span></span></li>
+			<li class="staging"><span></span></li>
+			<li class="staging"><span></span></li>
+		</ul>
+
+	<ul class="links">
+		<li>
+			<a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">git cheatsheet</a>
+		</li>
+		<li>
+			<a href="http://ibrokegit.com/">Drew's Broke Git</a>
+		</li>
+		<li>
+			<a href="http://cli.learncodethehardway.org/book/">Learn Code The Hard Way</a>
+		</li>
+	</ul>
+
+</body>
+</html>
