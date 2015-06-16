@@ -32,3 +32,11 @@
 <p><strong>git remote add origin https://{github-address}</strong> If ^ version pulls nothing, then pull your repo</p>
 <p><strong>git pull upstream master</strong></p>
 <p><strong>git log</strong></p>
+
+<h3>Create a Site from GitHub/ Syncing Branches</h3>
+<p><strong>git checkout -b gh-pages</strong> Create and switch to the new gh-pages branch - git check out: switches branches | -b: also creates a new branch at the same time</p>
+<p><strong>git branch</strong> Switches between branches</p>
+<p><strong>git checkout master</strong> Switch to master to update</p>
+<p><strong>git rebase gh-pages</strong> Updates changes in gh-pages into master</p>			
+<p><strong>git push origin gh-pages</strong> Can update gh-pages while in master</p>
+<p><strong>http://username.github.io/repository.</strong> Site location</p>
