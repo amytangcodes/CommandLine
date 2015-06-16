@@ -5,10 +5,10 @@
 
 <p>You will use <a href="http://github.com">GitHub</a> to host our version-controlled projects.</p>
 
-<p>The working directory is the folder that contains all your project files. To find this on Command Line you </p>
-<p>present working directory<span>pwd</span></p>
+<p>The present working directory is the folder that contains all your project files.</p>
+<p>Command: <span>pwd</span></p>
 
 <h2>Connecting To A New Or Existing Repository</h2>
+<h3>Cloning an Existing Repo</h3>
 
-<h3>Cloning an Existent Repo</h3>
 
