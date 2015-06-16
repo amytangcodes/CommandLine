@@ -10,7 +10,7 @@
 <h3>Connecting to a New or Existing Repository</h3>
 
 <h5>Cloning an Existing Repo</h5>
-<strong>$ git clone https://github.com/gitName/fileName</strong>
+<strong>$ git clone https://github.com/{gitName}/{fileName}</strong>
 <p>This will create a directory called 'fileName', initializes a .git directory inside and pulls down all the data from that repo.</p>
 
 
