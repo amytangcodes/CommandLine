@@ -6,3 +6,4 @@ In my quest to easily make available all the new command lines I learned at Hack
 You will use <a href="http://github.com">GitHub</a> to host our version-controlled projects.
 
 The working directory is the folder that contains all your project files. To find this on Command Line you 
+<p>fasdfadfasdfasdffsf</p>
