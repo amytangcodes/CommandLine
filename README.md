@@ -7,19 +7,28 @@
 <p><strong>$ pwd</strong>The present working directory is the folder that contains all your project files.</p>
 
 
-<h2>Connecting to a New or Existing Repository</h2>
+<h3>Connecting to a New or Existing Repository</h3>
 
-<h3>Cloning an Existing Repo</h3>
+<h5>Cloning an Existing Repo</h5>
 <strong>$ git clone https://github.com/gitName/fileName</strong>
 <p>This will create a directory called 'fileName', initializes a .git directory inside and pulls down all the data from that repo.</p>
 
 
-<h3>Initializing a Repo in an Existing Directory</h3>
+<h5>Initializing a Repo in an Existing Directory</h5>
 <p><strong>$git init</strong> within the existing project's directory.</p>
 
-<h2>Updating Changes to Repo</h2>
+<h3>Updating Changes to Repo</h3>
 
-<p><strong>git add -A</strong>Add all new, modified and deleted files</p>
-<p><strong>git commit -m "a useful commit message here"</strong>Commit your changes and updates to take the snapshot of your project. For your first commit, it’s common for your message to be “initial commit”.</p>
-<p><strong>git status</strong>You can use this command at any step to check the status.</p>
-<p><strong>git push origin master</strong>Note that all these steps are still happening locally on your computer. Push the code to your github repository.</p>
+<p><strong>git add -A</strong> Add all new, modified and deleted files</p>
+<p><strong>git commit -m "a useful commit message here"</strong> Commit your changes and updates to take the snapshot of your project. For your first commit, it’s common for your message to be “initial commit”.</p>
+<p><strong>git status</strong> You can use this command at any step to check the status.</p>
+<p><strong>git push origin master</strong> sNote that all these steps are still happening locally on your computer. Push the code to your github repository.</p>
+
+<h3>Pushing Changed Repo Versions to Our Repo Version</h3>
+
+<p><strong>git remote -v</strong> Associating remote and our repo versions</p>
+<p><strong>git remote add upstream https://{remote repo}</strong> Upstream means the original version</p>
+<p><strong>git remote -v</strong> Check the repo version on GH you're working with</p>
+<p><strong>git remote add origin https://{github-address}</strong> If ^ version pulls nothing, then pull your repo</p>
+<p><strong>git pull upstream master</strong></p>
+<p><strong>git log</strong></p>
